@@ -4,19 +4,19 @@ import { makeRemoteExecutableSchema } from "graphql-tools";
 import { importSchema } from "graphql-import";
 import { GraphQLSchema } from "graphql";
 
-export interface BasicBindingOptions {
+export interface PostgraphileBindingOptions {
   endpoint?: string;
   typeDefs?: string | GraphQLSchema;
   fragmentReplacements?: FragmentReplacement[];
 }
 
-export class BasicBinding extends Binding {
+export class PostgraphileBinding extends Binding {
   public schema: GraphQLSchema;
 
-  constructor({ endpoint, typeDefs, fragmentReplacements }: BasicBindingOptions) {
+  constructor({ endpoint, typeDefs, fragmentReplacements }: PostgraphileBindingOptions) {
     if (!typeDefs) {
       throw new Error(
-        "No `typeDefs` provided when calling `new BasicBinding()`"
+        "No `typeDefs` provided when calling `new PostgraphileBinding()`"
       );
     }
 
