@@ -1,7 +1,7 @@
 {
   "name": "postgraphile-binding",
-  "version": "0.0.1",
-  "description": "A fork of basic-binding for use with postgraphile.",
+  "version": "0.0.2",
+  "description": "GraphQL bindings for postgraphile.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
