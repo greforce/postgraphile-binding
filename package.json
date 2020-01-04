@@ -1,14 +1,14 @@
 {
-  "name": "basic-binding",
-  "version": "0.0.2",
-  "description": "A basic GraphQL binding implementation that will work with most GraphQL servers.",
+  "name": "postgraphile-binding",
+  "version": "0.0.1",
+  "description": "A fork of basic-binding for use with postgraphile.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/artetecha/basic-binding",
-  "author": "Vincenzo Russo (v@artetecha.com)",
+  "repository": "https://github.com/greforce/postgraphile-binding",
+  "author": "Gregory Kovorotny (greforce76@gmail.com)",
   "license": "MIT",
   "private": false,
   "scripts": {
