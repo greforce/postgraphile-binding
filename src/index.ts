@@ -1,4 +1,4 @@
-import { Binding } from "graphql-binding";
+import { Binding, FragmentReplacement } from "graphql-binding";
 import { HttpLink } from "apollo-link-http";
 import { makeRemoteExecutableSchema } from "graphql-tools";
 import { importSchema } from "graphql-import";
@@ -7,6 +7,7 @@ import { GraphQLSchema } from "graphql";
 export interface BasicBindingOptions {
   endpoint?: string;
   typeDefs?: string | GraphQLSchema;
+  fragmentReplacements?: FragmentReplacement[];
 }
 
 export class BasicBinding extends Binding {
