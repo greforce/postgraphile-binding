@@ -1,19 +1,19 @@
-# `basic-binding`
+# `postgraphile-binding`
 
-This library is a simple and generic [graphql-binding](https://github.com/graphql-binding/graphql-binding) implementation which should be suitable for connecting to most GraphQL server that don't require any kind of authorisation.
+This library is a fork of a simple [basic-binding](https://github.com/artetecha/basic-binding) implementation with added fragmentReplacements option, and intended for use with postgraphile.
 
 ## Overview
 
-`basic-binding` provides a convenience layer for building GraphQL servers on top of another GraphQL service. In short, it simplifies implementing your GraphQL resolvers by _delegating_ execution of queries (or mutations) to the API of the underlying GraphQL service.
+`postgraphile-binding` provides a convenience layer for building GraphQL servers on top of postgraphile GraphQL service. In short, it simplifies implementing your GraphQL resolvers by _delegating_ execution of queries (or mutations) to the API of the underlying postgraphile GraphQL service.
 
 ## Install
 
 ```sh
-$ yarn add basic-binding
+$ yarn add postgraphile-binding
 # or:
-$ npm install basic-binding
+$ npm install postgraphile-binding
 ```
 
-## How to use
+## Future plans
 
-More documentation to come, but in the meantime, please refer to the examples in this repository.
+The idea is to develop this package, making it useful for postgraphile users. For the moment you may refer to the examples in this repository.
