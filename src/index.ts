@@ -13,7 +13,7 @@ export interface BasicBindingOptions {
 export class BasicBinding extends Binding {
   public schema: GraphQLSchema;
 
-  constructor({ endpoint, typeDefs }: BasicBindingOptions) {
+  constructor({ endpoint, typeDefs, fragmentReplacements }: BasicBindingOptions) {
     if (!typeDefs) {
       throw new Error(
         "No `typeDefs` provided when calling `new BasicBinding()`"
@@ -51,7 +51,8 @@ export class BasicBinding extends Binding {
 
     // Invoke the constructor of `Binding` with the remote schema
     super({
-      schema: schema
+      schema: schema,
+      fragmentReplacements: fragmentReplacements
     });
 
     this.schema = schema;
